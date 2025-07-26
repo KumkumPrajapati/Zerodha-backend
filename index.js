@@ -14,6 +14,8 @@ const {PositionModel} = require("./model/PositionModel");
 const PORT = process.env.PORT || 3002;
 const URL = process.env.MONGO_URL;
 
+
+
 const app = express();
  app.use(cors());
  app.use(bodyParser.json());
@@ -74,7 +76,7 @@ app.get("/allPosition", async(req,res)=>{
     res.json(allPosition);
 });
 
-app.use("/", authRoute);
+//app.use("/", authRoute);
 
 app.listen(PORT, ()=>{
 console.log("app started");
