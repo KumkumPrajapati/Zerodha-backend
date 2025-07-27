@@ -8,7 +8,8 @@ const router = express.Router();
 // })
 //router.post('/signup', signupValidation, signup);
 router.post('/signup', signup);
-router.post('/login', loginValidation, login);
+//router.post('/login', loginValidation, login);
+router.post('/login',  login);
 //router.post('/signup', signupValidation, signup);
 
 module.exports = router;
